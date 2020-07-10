@@ -30,13 +30,38 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+  First setup your basic class component then create your constructor where your state will be stored, then set up any state management you may need with the diffrent life cycle methods. Then render whatever child component or thing you want you state to be passed into.
+
 2. Describe the different phases of the component lifecycle.
+
+  The RENDER PHASE has no side effects and is the begining phase where it can be aborted or restarted by React.
+
+  The COMMIT PHASE is where side effects run free and update or any manipulation to the component state happens.
+
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+  The lifecycle methods are used to manipulate state at diffrent points in the lifecycle.
+
+  The CONSTRUCTOR intializes local state.
+
+  RENDER converts your react code to readable code to be displayed.
+
+  componetDidMount() is envoked right after the component mounted and is used to retrive remote end points.
+
+  componentDidUpdate() is envoked right after updating and is used to operate on the DOM.
+
 4. Define stateful logic.
 
+  Stateful logic is anything that uses state or does things in the background.
+
 5. Describe how to test a React component with React Testing Library.
+
+  Arrange, Act, Assert
+
+  import the things you need, set up test('name of test here', ()=>{
+    then you render the component you are testing(Arrange) and screen.get specfic parts you need to run it as though a user is going through it(Act) then expect what the final result should be(Assert)
+  })
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
